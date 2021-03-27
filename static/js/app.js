@@ -15,20 +15,19 @@ function displayData() {
   var inputElement = d3.select("#datetime");
   //get the value of the user input element
   var inputValue = inputElement.property("value");
-  // console.log(inputValue);
-  // console.log(ufoData);
-  var userDate = ufoData.filter(userDate => userDate.datetime === inputValue);
+
+  var filterdDate = ufoData.filter(userDate => userDate.datetime === inputValue);
+
+  var ufoInfo = filterdDate.map(userDate => userDate.)
 
   var tbody = d3.select("tbody");
-  
-  data.forEach(ufoSightings => {
-        var row = tbody.append('tr')
-        Object.entries(ufoSightings).forEach(function([key, value]) {
-          var cell = row.append('td')
-          cell.text(value)
-        })
-      })
-
+  data.forEach(ufoData => {
+    var row = tbody.append('tr')
+    Object.entries(ufoData).forEach(function([key, value]) {
+      var cell = row.append('td')
+      cell.text(value)
+    })
+  })
 }
 
 
