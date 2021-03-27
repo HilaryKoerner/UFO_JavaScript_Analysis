@@ -1,9 +1,8 @@
 // from data.js
 var ufoData = data;
 
-//select the button
+//select the button and input
 var button = d3.select("#filter-btn")
-//select the input
 var input = d3.select("#datetime")
 
 //event listeners
@@ -12,51 +11,60 @@ input.on("change", displayData);
 
 //complete the event handler function for the form
 function displayData() {
-  var tbody = d3.select("tbody");
-  var userDate = dates.filter(ufoData => ufoData.datetime === input);
+  //select the input and get the raw HTML node
+  var inputElement = d3.select("#datetime");
+  //get the value of the user input element
+  var inputValue = inputElement.property("value");
+  console.log(inputValue);
+  console.log(ufoData);
+
+
+
+  // var tbody = d3.select("tbody");
+  // var userDate = dates.filter(ufoData => ufoData.datetime === input);
 
 }
 
 
 
 
-// // Get a reference to the table body
-var tbody = d3.select("tbody");
+// // // Get a reference to the table body
+// var tbody = d3.select("tbody");
 
-// // Console.log the UFO data from data.js
-console.log(data);
-
-
-
-function displayData() {
-  data.forEach(ufoSightings => {
-    var row = tbody.append('tr')
-    Object.entries(ufoSightings).forEach(function([key, value]) {
-      var cell = row.append('td')
-      cell.text(value)
-    })
-  })
-}
+// // // Console.log the UFO data from data.js
+// console.log(data);
 
 
 
-//input and output elements
-var date = d3.select("#datetime");
-var output = d3.select("#ufo-table");
+// function displayData() {
+//   data.forEach(ufoSightings => {
+//     var row = tbody.append('tr')
+//     Object.entries(ufoSightings).forEach(function([key, value]) {
+//       var cell = row.append('td')
+//       cell.text(value)
+//     })
+//   })
+// }
 
-//event listener (to grab date from above)
-data.forEach(ufoSightings => {
-  var row = tbody.append('tr')
-  Object.entries(ufoSightings).forEach(function([key, value]) {
-    var cell = row.append('td')
-    cell.text(value)
-  })
-})
 
-//event handler
 
-//this will clear the table (not yet)
-output.table("")
+// //input and output elements
+// var date = d3.select("#datetime");
+// var output = d3.select("#ufo-table");
+
+// //event listener (to grab date from above)
+// data.forEach(ufoSightings => {
+//   var row = tbody.append('tr')
+//   Object.entries(ufoSightings).forEach(function([key, value]) {
+//     var cell = row.append('td')
+//     cell.text(value)
+//   })
+// })
+
+// //event handler
+
+// //this will clear the table (not yet)
+// output.table("")
 
 
 
