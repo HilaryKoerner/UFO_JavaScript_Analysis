@@ -15,13 +15,19 @@ function displayData() {
   var inputElement = d3.select("#datetime");
   //get the value of the user input element
   var inputValue = inputElement.property("value");
-  console.log(inputValue);
-  console.log(ufoData);
+  // console.log(inputValue);
+  // console.log(ufoData);
+  var userDate = ufoData.filter(userDate => userDate.datetime === inputValue);
 
-
-
-  // var tbody = d3.select("tbody");
-  // var userDate = dates.filter(ufoData => ufoData.datetime === input);
+  var tbody = d3.select("tbody");
+  
+  data.forEach(ufoSightings => {
+        var row = tbody.append('tr')
+        Object.entries(ufoSightings).forEach(function([key, value]) {
+          var cell = row.append('td')
+          cell.text(value)
+        })
+      })
 
 }
 
