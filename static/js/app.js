@@ -13,7 +13,7 @@ data.forEach(function(ufoSightings) {
   console.log(ufoSightings);
 });
 
-// // Step 2:  Use d3 to append one table row `tr` for each weather report object
+// // Step 2:  Use d3 to append one table row `tr` for each UFO report object
 // // Don't worry about adding cells or text yet, just try appending the `tr` elements.
 data.forEach(function(ufoSightings) {
   console.log(ufoSightings);
@@ -29,7 +29,7 @@ data.forEach(function(ufoSightings) {
       });
     });
 
-// Step 4: Use d3 to append 1 cell per weather report value (weekday, date, high, low)
+// Step 4: Use d3 to append 1 cell per UFO report value (Date, City, State, Country, Shape, Duration, Comments)
 data.forEach(function(ufoSightings) {
   console.log(ufoSightings);
   var row = tbody.append("tr");
@@ -37,13 +37,13 @@ data.forEach(function(ufoSightings) {
   Object.entries(ufoSightings).forEach(function([key, value]) {
     console.log(key, value);
     // Append a cell to the row for each value
-    // in the weather report object
+    // in the UFO report object
     var cell = row.append("td");
   });
 });
 
 // // Step 5: Use d3 to update each cell's text with
-// // weather report values (weekday, date, high, low)
+// // UFO report info (Date, City, State, Country, Shape, Duration, Comments)
 data.forEach(function(ufoSightings) {
   console.log(ufoSightings);
   var row = tbody.append("tr");
@@ -55,3 +55,6 @@ data.forEach(function(ufoSightings) {
     cell.text(value);
   });
 });
+
+//event listeners and handlers
+var date = d3.select("#date");
