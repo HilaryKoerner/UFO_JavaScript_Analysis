@@ -20,20 +20,20 @@ function displayData() {
 
   var filteredDate = ufoData.filter(userDate => userDate.datetime === inputValue);
 
-  console.log(filteredDate);
+  console.log(typeof(ufoData[0].datetime));}
   
-  var city = filteredDate.map(userDate => userDate.city);
-  consolelog(city);
+  var city = filteredDate.map(userDate => userDate);
+  
+  consolelog(unfo);
 
   var tbody = d3.select("tbody");
-  data.forEach(ufoInfo => {
+  data.forEach(filteredDate => {
     var row = tbody.append('tr')
-    Object.entries(ufoInfo).forEach(function([key, value]) {
+    Object.entries(filteredDate).forEach(function([key, value]) {
       var cell = row.append('td')
       cell.text(value)
     })
-  })
-};
+  });
 
 
 
