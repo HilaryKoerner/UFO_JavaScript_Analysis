@@ -20,75 +20,76 @@ function displayData() {
 
   var filterdDate = ufoData.filter(userDate => userDate.datetime === inputValue);
 
-  var ufoInfo = filterdDate.map(userDate => userDate);
-  console.log(userInfo);}
+  console.log(inputValue);}
+  
+//   var ufoInfo = filterdDate.map(userDate => userDate);
 
 //   var tbody = d3.select("tbody");
-//   data.forEach(ufoData => {
+//   data.forEach(ufoInfo => {
 //     var row = tbody.append('tr')
-//     Object.entries(ufoData).forEach(function([key, value]) {
+//     Object.entries(ufoInfo).forEach(function([key, value]) {
 //       var cell = row.append('td')
 //       cell.text(value)
 //     })
 //   })
-// }
+// };
 
 
 
 
-// // // Get a reference to the table body
-// var tbody = d3.select("tbody");
+// // // // Get a reference to the table body
+// // var tbody = d3.select("tbody");
 
-// // // Console.log the UFO data from data.js
-// console.log(data);
-
-
-
-// function displayData() {
-//   data.forEach(ufoSightings => {
-//     var row = tbody.append('tr')
-//     Object.entries(ufoSightings).forEach(function([key, value]) {
-//       var cell = row.append('td')
-//       cell.text(value)
-//     })
-//   })
-// }
+// // // // Console.log the UFO data from data.js
+// // console.log(data);
 
 
 
-// //input and output elements
-// var date = d3.select("#datetime");
-// var output = d3.select("#ufo-table");
-
-// //event listener (to grab date from above)
-// data.forEach(ufoSightings => {
-//   var row = tbody.append('tr')
-//   Object.entries(ufoSightings).forEach(function([key, value]) {
-//     var cell = row.append('td')
-//     cell.text(value)
-//   })
-// })
-
-// //event handler
-
-// //this will clear the table (not yet)
-// output.table("")
+// // function displayData() {
+// //   data.forEach(ufoSightings => {
+// //     var row = tbody.append('tr')
+// //     Object.entries(ufoSightings).forEach(function([key, value]) {
+// //       var cell = row.append('td')
+// //       cell.text(value)
+// //     })
+// //   })
+// // }
 
 
+
+// // //input and output elements
+// // var date = d3.select("#datetime");
+// // var output = d3.select("#ufo-table");
+
+// // //event listener (to grab date from above)
+// // data.forEach(ufoSightings => {
+// //   var row = tbody.append('tr')
+// //   Object.entries(ufoSightings).forEach(function([key, value]) {
+// //     var cell = row.append('td')
+// //     cell.text(value)
+// //   })
+// // })
+
+// // //event handler
+
+// // //this will clear the table (not yet)
+// // output.table("")
 
 
 
 
 
-// // // // UFO report info (Date, City, State, Country, Shape, Duration, Comments)
-// data.forEach(function(ufoSightings) {
-//   // console.log(ufoSightings);
-//   var row = tbody.append("tr");
-//   Object.entries(ufoSightings).forEach(function([key, value]) {
-//     // console.log(key, value);
-//     // Append a cell to the row for each value
-//     // in the weather report object
-//     var cell = row.append("td");
-//     cell.text(value);
-//   });
-// });
+
+
+// // // // // UFO report info (Date, City, State, Country, Shape, Duration, Comments)
+// // data.forEach(function(ufoSightings) {
+// //   // console.log(ufoSightings);
+// //   var row = tbody.append("tr");
+// //   Object.entries(ufoSightings).forEach(function([key, value]) {
+// //     // console.log(key, value);
+// //     // Append a cell to the row for each value
+// //     // in the weather report object
+// //     var cell = row.append("td");
+// //     cell.text(value);
+// //   });
+// // });
