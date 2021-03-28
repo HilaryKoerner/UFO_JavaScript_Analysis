@@ -18,11 +18,12 @@ function displayData() {
   // console.log(inputValue);
   // console.log(ufoData);
 
-  var filterdDate = ufoData.filter(userDate => userDate.datetime === inputValue);
+  var filteredDate = ufoData.filter(userDate => userDate.datetime === inputValue);
 
-  console.log(inputValue);}
+  console.log(inputValue);
   
-//   var ufoInfo = filterdDate.map(userDate => userDate);
+  var city = filteredDate.map(userDate => userDate.city);
+  consolelog(city);
 
 //   var tbody = d3.select("tbody");
 //   data.forEach(ufoInfo => {
