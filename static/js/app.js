@@ -20,7 +20,8 @@ function displayData() {
 
   var filterdDate = ufoData.filter(userDate => userDate.datetime === inputValue);
 
-  var ufoInfo = filterdDate.map(userDate => userDate)
+  var ufoInfo = filterdDate.map(userDate => userDate);
+  console.log(userInfo);}
 
 //   var tbody = d3.select("tbody");
 //   data.forEach(ufoData => {
