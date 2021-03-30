@@ -12,22 +12,14 @@ function displayData() {
   var inputElement = d3.select("#datetime");
   //get the value of the user input element
   var inputValue = inputElement.property("value");
-  // var filtered = [];
-  // // console.log(ufoData);
-  // ufoData.forEach(function (d) {
-  //   if(Date.parse(d.datetime) == Date.parse(inputValue)) {
-  //     filtered.push(d);
-  //   }
-  // });
+
   // console.log(filtered);
   // console.log(inputValue);
   // console.log(ufoData);
   // console.log(ufoData[0].datetime)
+  
   var filteredDate = ufoData.filter(d => Date.parse(d.datetime) === Date.parse(inputValue));
-  // console.log("hello");
-  // console.log(filteredDate);
-  //var city = filteredDate.map(userDate => userDate);
-  //consolelog(unfo);
+
   var tbody = d3.select("tbody");
   tbody.html("")
   filteredDate.forEach(d => {
