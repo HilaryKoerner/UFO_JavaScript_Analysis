@@ -14,4 +14,4 @@ The functionality of the site lives within the app.js file. Using D3, the end-us
 ![changehandler](https://user-images.githubusercontent.com/74504885/122327694-eb00b900-cef3-11eb-9cec-19f066de8e2b.PNG)
 
 
-I parse the user input and set it "===" to the data in hte data.js file and then filter and append the matched data to the body in the index.html file. In order to start with a empty webpage, I used tbody.html("") to clear out the data.
+I parsed the user input and set it "===" to the data in hte data.js file and then filter and append the matched data to the body in the index.html file. In order to start with a empty webpage, I used tbody.html("") to clear out the data.
