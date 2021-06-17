@@ -10,6 +10,7 @@ Data was provided to me in a data.js file. Each instance in the file has seven f
 
 ## app.js
 The functionality of the site lives within the app.js file. Using D3, the end-user can enter a date and populate the related information. Both "click" and "change" work to populate the data. The user can click the filter button or the they can filter on a change event which includes pressing enter or tab. 
+
 ![changehandler](https://user-images.githubusercontent.com/74504885/122327694-eb00b900-cef3-11eb-9cec-19f066de8e2b.PNG)
 
 
