@@ -2,11 +2,11 @@
 
 Using javsScript, HTML, CSS, and D3, I created a website to filter a users unput and display the related infomration. 
 
-## HTML File
+## index.html
+I used an index.html file for the front end facing portion of the website. I used a hero display to draw the user in as well as user input field and a striped table for legibility. 
 
+## data.js
+Data was provided to me in a data.js file. Each instance in the file has seven fields that I referenced and pulled into the index.html file. 
 
-that was linked to a js file. The js file stores the database information and displays information based on the user's input. I used an index.html file linked to an app.js file. The html file contained the code for the display of the webpage and the app.js file contained the code for the functionality. 
-
-In my javaSCript file, I created a variable and linked it to my data, used D3 to select the button feature from the html file, and assigned event listeners to the button activity. 
-
-I used a function to run an event handler to diplay the user input. The code collects the user input and feeds it through an arrow function to display the data. Prior to displaying the data, I used tbody.html("") to clear out the data. 
+## app.js
+The functionality of the site lives within the app.js file. Using D3, the end-user can enter a date and populate the related information. Both "click" and "change" work to populate the data. The user can click the filter button or the they can filter on a change event which includes pressing enter or tab. I parse the user input and set it "===" to the data in hte data.js file and then filter and append the matched data to the body in the index.html file. In order to start with a empty webpage, I used tbody.html("") to clear out the data.
