@@ -15,3 +15,6 @@ The functionality of the site lives within the app.js file. Using D3, the end-us
 
 
 I parsed the user input and set it "===" to the data in hte data.js file and then filter and append the matched data to the body in the index.html file. In order to start with a empty webpage, I used tbody.html("") to clear out the data.
+
+![parsed](https://user-images.githubusercontent.com/74504885/122327827-2602ec80-cef4-11eb-8146-600b5099cedb.PNG)
+
