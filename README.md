@@ -2,7 +2,7 @@
 
 Using javsScript, HTML, CSS, and D3, I created a website to filter a users unput and display the related infomration. 
 
-# HTML File
+## HTML File
 
 
 that was linked to a js file. The js file stores the database information and displays information based on the user's input. I used an index.html file linked to an app.js file. The html file contained the code for the display of the webpage and the app.js file contained the code for the functionality. 
