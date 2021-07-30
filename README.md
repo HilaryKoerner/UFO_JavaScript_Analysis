@@ -5,6 +5,8 @@ Using javsScript, HTML, CSS, and D3, I created a website to filter a users unput
 ## index.html
 I used an index.html file for the front end facing portion of the website. I used a hero display to draw the user in as well as user input field and a striped table for legibility. 
 
+![UFO1](https://user-images.githubusercontent.com/74504885/127592639-3efb76d0-cd92-4b11-b962-8449390f0b18.PNG)
+
 ## data.js
 Data was provided to me in a data.js file. Each instance in the file has seven fields that I referenced and pulled into the index.html file. 
 
