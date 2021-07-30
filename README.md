@@ -7,6 +7,8 @@ I used an index.html file for the front end facing portion of the website. I use
 
 ![UFO1](https://user-images.githubusercontent.com/74504885/127592639-3efb76d0-cd92-4b11-b962-8449390f0b18.PNG)
 
+![UFO2](https://user-images.githubusercontent.com/74504885/127592671-1df3584b-6c94-46a1-a865-60adf4ed6ea3.PNG)
+
 ## data.js
 Data was provided to me in a data.js file. Each instance in the file has seven fields that I referenced and pulled into the index.html file. 
 
