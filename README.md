@@ -1,4 +1,4 @@
-# UFO javaScript Analysis
+# UFO JavaScript Analysis
 
 Using javsScript, HTML, CSS, and D3, I created a website to filter a users unput and display the related infomration. 
 
