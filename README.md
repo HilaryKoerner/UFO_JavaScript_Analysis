@@ -1,6 +1,6 @@
 # UFO JavaScript Analysis
 
-Using javsScript, HTML, CSS, and D3, I created a website to filter a user's unput and display the related infomration. 
+Using javsScript, HTML, CSS, and D3, I created a website to filter a user's unput and display the related information. 
 
 ## index.html
 I used an index.html file for the front end facing portion of the website. I used a hero display to draw the user in as well as user input field and a striped table for legibility. 
